@@ -1,5 +1,6 @@
 /* Global stylesheet entry point. Keep the existing visual system in index.css and apply final layout fixes after it. */
 @import "../index.css";
 @import "./site-fixes.css";
+@import "./final-fixes.css";
 
 /* This file intentionally keeps the Lovable/Tailwind entry minimal; the Amaral Engenharia visual system lives in index.css. */
