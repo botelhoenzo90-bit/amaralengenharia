@@ -30,10 +30,10 @@
 .ae-marquee-wrap:hover .ae-marquee,.ae-marquee:hover{animation-play-state:running!important}
 .ae-services-marquee{animation:serviceScroll 48s linear infinite!important}
 .ae-reviews-marquee{animation:reviewScroll 38s linear infinite!important}
-.ae-service-card{width:330px;flex:0 0 330px;min-height:410px;border-radius:24px;display:flex;flex-direction:column;overflow:visible}
+.ae-service-card{position:relative;width:330px;flex:0 0 330px;min-height:410px;border-radius:24px;display:flex;flex-direction:column;overflow:visible}
 .ae-service-image{height:190px;flex:0 0 190px;overflow:hidden;margin-bottom:30px;border-radius:24px 24px 0 0}
-.ae-service-icon{left:50%;right:auto;bottom:-28px;transform:translateX(-50%);width:56px;height:56px;border-radius:18px;border:4px solid #fff;z-index:4}
-.ae-service-card:hover .ae-service-icon{transform:translateX(-50%)}
+.ae-service-icon{position:absolute!important;left:50%!important;right:auto!important;top:162px!important;bottom:auto!important;transform:translateX(-50%)!important;width:56px;height:56px;border-radius:18px;border:4px solid #fff;z-index:4}
+.ae-service-card:hover .ae-service-icon{transform:translateX(-50%)!important}
 .ae-service-body{padding:0 23px 25px;text-align:center;display:flex;flex-direction:column;flex:1}
 .ae-service-body h3{font-size:18px;line-height:1.25;margin:0 0 10px;text-align:center}
 .ae-service-body p{min-height:0;margin:auto 0 0;font-size:13px;line-height:1.65;text-align:center}
@@ -51,6 +51,10 @@
 .ae-technical{position:relative;overflow:hidden;padding:66px 0;background:linear-gradient(135deg,var(--blue2),var(--blue));isolation:isolate}
 .ae-technical:before{content:'';position:absolute;width:520px;height:520px;right:-180px;top:-220px;border-radius:50%;background:rgba(255,255,255,.09);box-shadow:-160px 170px 0 30px rgba(255,255,255,.035);z-index:-1}
 .ae-technical:after{content:'ENGENHARIA • ANÁLISE • RESPONSABILIDADE';position:absolute;left:50%;bottom:12px;transform:translateX(-50%);font:800 10px 'Plus Jakarta Sans',sans-serif;letter-spacing:.2em;color:rgba(255,255,255,.22);white-space:nowrap;z-index:-1}
+.ae-tech-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:1000px;margin:0 auto 20px}
+.ae-tech-summary>div{padding:16px 18px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:rgba(255,255,255,.07);display:flex;flex-direction:column;align-items:center;text-align:center}
+.ae-tech-summary strong{color:#fff;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
+.ae-tech-summary span{color:rgba(255,255,255,.72);font-size:11px;line-height:1.5;max-width:250px}
 .ae-tech-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .ae-tech-card{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center;min-height:275px;padding:30px 25px;border-radius:24px;overflow:hidden;transition:.25s ease}
 .ae-tech-card:before{content:'';position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,var(--blue),#67c9ff)}
@@ -87,6 +91,9 @@
 .ae-review-card p{margin:16px 0 0;max-width:285px;text-align:center;line-height:1.6}
 .ae-disclaimer{max-width:760px;margin:14px auto 0;text-align:center;line-height:1.6}
 .ae-process{padding:60px 0;background:linear-gradient(180deg,#fff 0%,#f8fbfe 100%)}
+.ae-process-highlight{max-width:850px;margin:0 auto 20px;padding:17px 22px;border-radius:20px;background:#edf6fc;border:1px solid #d7e9f5;display:flex;align-items:center;justify-content:center;gap:14px;text-align:center}
+.ae-process-highlight strong{font-size:13px;color:var(--blue);letter-spacing:.04em}
+.ae-process-highlight span{font-size:12px;color:#617489;line-height:1.5}
 .ae-process-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
 .ae-process-grid article{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center;min-height:215px;padding:23px 17px;border-radius:22px;overflow:hidden}
 .ae-process-grid article:not(:last-child):after{content:'';position:absolute;top:45px;right:-7px;width:14px;height:2px;background:#d7e5f1}
@@ -116,6 +123,7 @@ footer{padding:42px 0 22px}
 .ae-footer-bottom{text-align:center;justify-content:center}
 @media(max-width:900px){
  .ae-intro-grid,.ae-region-grid{grid-template-columns:1fr 1fr}
+ .ae-tech-summary{grid-template-columns:1fr;max-width:620px}
  .ae-tech-grid,.ae-process-grid{grid-template-columns:1fr 1fr}
  .ae-feature-layout,.ae-about-layout,.ae-contact-layout{grid-template-columns:1fr;gap:28px}
  .ae-feature-copy{order:1}
@@ -149,6 +157,7 @@ footer{padding:42px 0 22px}
  .ae-section-heading p{font-size:13px}
  .ae-service-card{width:290px;flex-basis:290px;min-height:375px}
  .ae-service-image{height:170px;flex-basis:170px;margin-bottom:28px}
+ .ae-service-icon{top:142px!important;width:52px;height:52px;border-radius:16px}
  .ae-service-body{padding:0 19px 22px}
  .ae-service-body h3{font-size:17px}
  .ae-service-body p{font-size:12px}
@@ -156,6 +165,8 @@ footer{padding:42px 0 22px}
  .ae-check-list{font-size:12px}
  .ae-tech-grid,.ae-process-grid{grid-template-columns:1fr}
  .ae-tech-card{min-height:230px;padding:27px 22px}
+ .ae-tech-summary{gap:8px;margin-bottom:16px}
+ .ae-tech-summary>div{padding:13px 14px}
  .ae-technical:after{font-size:8px;letter-spacing:.12em}
  .ae-region-grid{grid-template-columns:1fr 1fr}
  .ae-region-grid article{min-height:150px;padding:21px 10px}
@@ -164,6 +175,7 @@ footer{padding:42px 0 22px}
  .ae-review-card p{font-size:12px}
  .ae-cta{padding-bottom:50px}
  .ae-cta-inner{padding:32px 21px}
+ .ae-process-highlight{flex-direction:column;gap:5px;padding:15px 17px;margin-bottom:16px}
  .ae-faq-grid{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){.ae-services-marquee,.ae-reviews-marquee{animation-duration:120s!important}}
