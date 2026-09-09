@@ -70,7 +70,7 @@ function Index() {
 
       <section className="ae-intro"><div className="ae-container ae-intro-grid">
         {[[HardHat,"Engenharia Civil","Responsabilidade técnica"],[Wrench,"Reformas em geral","Do reparo ao acabamento"],[Home,"Especialidade em telhados","Revisão e manutenção"],[ClipboardCheck,"Laudos • Perícias • ART","Serviços técnicos"]].map(([Icon,title,text])=>{const I=Icon as typeof Wrench;return <div className="ae-intro-card" key={String(title)}><span className="ae-round-icon"><I/></span><strong>{String(title)}</strong><small>{String(text)}</small></div>})}
-      </div><div className="ae-container ae-intro-cta"><ContactButton label="Solicitar laudo, perícia ou ART" message="Olá! Quero solicitar um laudo, perícia ou ART."/></div></section>
+      </div><div className="ae-container ae-intro-cta"><ContactButton label="Chamar no WhatsApp" message="Olá! Quero solicitar um laudo, perícia ou ART."/></div></section>
 
       <section className="ae-section ae-services" id="servicos"><div className="ae-container">
         <div className="ae-section-heading"><div><span className="ae-kicker">SOLUÇÕES COMPLETAS</span><h2>Tudo para o seu imóvel em um só lugar.</h2></div><p>Serviços de engenharia, reformas, manutenção e acabamento com foco em qualidade e atendimento direto.</p></div>
