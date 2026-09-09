@@ -69,7 +69,7 @@ function Index() {
       </section>
 
       <section className="ae-intro"><div className="ae-container ae-intro-grid">
-        {[[HardHat,"Engenharia Civil","Responsabilidade técnica"],[Wrench,"Reformas em geral","Do reparo ao acabamento"],[Home,"Especialidade em telhados","Revisão e manutenção"],[ClipboardCheck,"Laudos • Perícias • ART","Serviços técnicos"]].map(([Icon,title,text])=>{const I=Icon as typeof Wrench;return <div className="ae-intro-card" key={String(title)}><span className="ae-round-icon"><I/></span><strong>{String(title)}</strong><small>{String(text)}</small></div>})}
+        {[[HardHat,"Engenharia Civil","Responsabilidade técnica"],[Wrench,"Reformas em geral","Do reparo ao acabamento"],[Home,"Especialidade em telhados","Revisão e manutenção"],[ClipboardCheck,"Laudos • Perícias • ART","Serviços técnicos"]].map(([Icon,title,text])=>{const I=Icon as typeof Wrench;return <div className="ae-intro-card" key={String(title)}><span className="ae-round-icon"><I/></span><strong>{String(title)}</strong><small>{String(text)}</small>{String(title)==="Laudos • Perícias • ART" && <a className="ae-btn ae-btn-green ae-intro-wa" href={wa("Olá! Quero solicitar um laudo, perícia ou ART.")} target="_blank" rel="noreferrer"><MessageCircle size={15}/>WhatsApp</a>}</div>})}
       </div></section>
 
       <section className="ae-section ae-services" id="servicos"><div className="ae-container">
