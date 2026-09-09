@@ -124,7 +124,7 @@ footer{padding:42px 0 22px}
  .ae-intro-grid,.ae-region-grid{grid-template-columns:1fr 1fr}
  .ae-tech-summary{grid-template-columns:1fr;max-width:620px}
  .ae-tech-grid,.ae-process-grid{grid-template-columns:1fr 1fr}
- .ae-feature-layout,.ae-about-layout,.ae-contact-layout{grid-template-columns:1fr;gap:28px}
+ .ae-contact-layout{grid-template-columns:1fr;gap:28px}
  .ae-feature-copy{order:1}
  .ae-feature-image{order:2}
  .ae-about-copy{order:1}
