@@ -1,4 +1,9 @@
 /* Final requested refinements */
+@media(min-width:901px){
+ .ae-feature-layout,.ae-about-layout{display:flex;justify-content:center}
+ .ae-feature-copy,.ae-about-copy{width:min(880px,100%)}
+ .ae-contact-layout{align-items:center}
+}
 .ae-intro .ae-centered-cta{margin-top:22px}
 .ae-feature-copy{display:flex;flex-direction:column;align-items:center;text-align:center}
 .ae-feature-copy .ae-feature-image{order:3;width:min(700px,100%);min-height:0;height:300px;margin:22px auto 20px;overflow:hidden;border-radius:26px}
