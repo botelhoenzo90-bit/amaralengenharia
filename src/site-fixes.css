@@ -16,7 +16,6 @@
 .ae-intro-card strong,.ae-intro-card small{text-align:center}
 .ae-intro-card strong{font-size:14px;line-height:1.35}
 .ae-intro-card small{line-height:1.45}
-.ae-intro:after{content:'Solicite uma avaliação pelo WhatsApp';display:block;width:max-content;max-width:calc(100% - 32px);margin:22px auto 0;padding:13px 25px;border-radius:999px;background:var(--green);color:#fff;font:800 13px 'Plus Jakarta Sans',sans-serif;box-shadow:0 12px 28px rgba(22,184,106,.22)}
 .ae-section{padding:60px 0}
 .ae-section-heading{display:flex;flex-direction:column;align-items:center;text-align:center;gap:9px;margin:0 auto 28px}
 .ae-section-heading>div{width:100%;max-width:860px;text-align:center}
@@ -125,7 +124,7 @@ footer{padding:42px 0 22px}
  .ae-intro-grid,.ae-region-grid{grid-template-columns:1fr 1fr}
  .ae-tech-summary{grid-template-columns:1fr;max-width:620px}
  .ae-tech-grid,.ae-process-grid{grid-template-columns:1fr 1fr}
- .ae-feature-layout,.ae-about-layout,.ae-contact-layout{grid-template-columns:1fr;gap:28px}
+ .ae-contact-layout{grid-template-columns:1fr;gap:28px}
  .ae-feature-copy{order:1}
  .ae-feature-image{order:2}
  .ae-about-copy{order:1}
@@ -150,8 +149,7 @@ footer{padding:42px 0 22px}
  .ae-intro-card strong{font-size:12px}
  .ae-intro-card small{font-size:10px}
  .ae-round-icon{width:46px;height:46px;flex-basis:46px;border-radius:15px}
- .ae-intro:after{font-size:12px;text-align:center}
- .ae-section,.ae-roof,.ae-technical,.ae-reviews,.ae-process,.ae-faq,.ae-contact{padding:50px 0}
+  .ae-section,.ae-roof,.ae-technical,.ae-reviews,.ae-process,.ae-faq,.ae-contact{padding:50px 0}
  .ae-section-heading{margin-bottom:23px}
  .ae-section-heading h2{font-size:clamp(29px,9vw,42px)}
  .ae-section-heading p{font-size:13px}
