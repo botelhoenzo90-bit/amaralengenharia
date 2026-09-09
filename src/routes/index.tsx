@@ -70,7 +70,7 @@ function Index() {
 
       <section className="ae-intro"><div className="ae-container ae-intro-grid">
         {[[HardHat,"Engenharia Civil","Responsabilidade técnica"],[Wrench,"Reformas em geral","Do reparo ao acabamento"],[Home,"Especialidade em telhados","Revisão e manutenção"],[ClipboardCheck,"Laudos • Perícias • ART","Serviços técnicos"]].map(([Icon,title,text])=>{const I=Icon as typeof Wrench;return <div className="ae-intro-card" key={String(title)}><span className="ae-round-icon"><I/></span><strong>{String(title)}</strong><small>{String(text)}</small></div>})}
-      </div><div className="ae-centered-cta"><ContactButton label="Solicitar avaliação pelo WhatsApp" message="Olá! Quero solicitar uma avaliação do meu imóvel."/></div></section>
+      </div></section>
 
       <section className="ae-section ae-services" id="servicos"><div className="ae-container">
         <div className="ae-section-heading"><div><span className="ae-kicker">SOLUÇÕES COMPLETAS</span><h2>Tudo para o seu imóvel em um só lugar.</h2></div><p>Serviços de engenharia, reformas, manutenção e acabamento com foco em qualidade e atendimento direto.</p></div>
@@ -97,7 +97,7 @@ function Index() {
       <section className="ae-section ae-contact" id="contato"><div className="ae-container ae-contact-layout"><div><span className="ae-kicker">FALE CONOSCO</span><h2>Seu imóvel merece uma solução bem executada.</h2><p>Atendimento direto com Valluce Amaral, Engenheiro Civil e Perito.</p><ContactButton label="Falar pelo WhatsApp" message="Olá, Valluce! Quero solicitar um orçamento."/></div><div className="ae-contact-card"><span className="ae-contact-logo">AE</span><h3>AMARAL ENGENHARIA</h3><small>ENGENHARIA CIVIL • PERÍCIAS</small><div><MapPin/><span><small>Atendimento</small><b>Brasília — DF</b></span></div><div><MessageCircle/><span><small>WhatsApp</small><b>(61) 98327-7032</b></span></div><div><Award/><span><small>Responsável técnico</small><b>CREA 27125 / D MG</b></span></div></div></div></section>
     </main>
 
-    <a className="ae-floating-whatsapp" href={wa("Olá! Vim pelo site da Amaral Engenharia e quero solicitar atendimento.")} target="_blank" rel="noreferrer" aria-label="Falar com a Amaral Engenharia pelo WhatsApp"><img className="ae-whatsapp-logo" src={whatsappLogo.url} alt=""/><span>WhatsApp</span></a>
+    <a className="ae-floating-whatsapp" href={wa("Olá! Vim pelo site da Amaral Engenharia e quero solicitar atendimento.")} target="_blank" rel="noreferrer" aria-label="Falar com a Amaral Engenharia pelo WhatsApp"><img className="ae-whatsapp-logo" src={whatsappLogo.url} alt="WhatsApp"/></a>
 
     <footer className="ae-footer"><div className="ae-container"><div className="ae-footer-grid"><div><div className="ae-footer-brand"><span>AE</span><div><b>AMARAL ENGENHARIA</b><small>ENGENHARIA CIVIL • PERÍCIAS</small></div></div><p>Reformas, telhados e serviços de engenharia em Brasília/DF.</p></div><div><h4>Serviços</h4><a href="#servicos">Todos os serviços</a><a href="#telhados">Telhados</a><a href="#engenharia">Engenharia técnica</a></div><div><h4>Atendimento</h4><span>Brasília — DF</span><span>Lago Norte • Lago Sul</span><span>Jardim Botânico • Plano Piloto</span><a href={WHATSAPP} target="_blank" rel="noreferrer">(61) 98327-7032</a></div></div><div className="ae-footer-bottom"><span>© 2026 Amaral Engenharia. Todos os direitos reservados.</span><span>Engº Civil • Perito • CREA 27125 / D MG</span></div></div></footer>
   </div>;
