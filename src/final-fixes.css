@@ -26,6 +26,6 @@
  .ae-feature-copy .ae-feature-image,.ae-about-copy .ae-about-image{height:220px;margin:18px auto 17px;border-radius:21px}
  .ae-review-card{width:310px;flex-basis:310px;min-height:285px;padding:23px 19px}
  .ae-review-card p{max-width:270px;font-size:13px;line-height:1.7}
- .ae-floating-whatsapp{right:15px;bottom:15px;width:54px;height:54px;padding:0;justify-content:center;border-radius:50%}
- .ae-floating-whatsapp span{display:none}
+ .ae-floating-whatsapp{right:15px;bottom:15px}
+ .ae-floating-whatsapp .ae-whatsapp-logo{width:54px;height:54px}
 }
