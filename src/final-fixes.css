@@ -1,0 +1,30 @@
+/* Final requested refinements */
+.ae-intro .ae-centered-cta{margin-top:22px}
+.ae-feature-copy{display:flex;flex-direction:column;align-items:center;text-align:center}
+.ae-feature-copy .ae-feature-image{order:3;width:min(700px,100%);min-height:0;height:300px;margin:22px auto 20px;overflow:hidden;border-radius:26px}
+.ae-feature-copy .ae-feature-image img{width:100%;height:100%;object-fit:cover}
+.ae-feature-copy .ae-check-list{order:4;width:min(650px,100%)}
+.ae-feature-copy>.ae-btn{order:5}
+.ae-about-copy{display:flex;flex-direction:column;align-items:center;text-align:center}
+.ae-about-copy .ae-about-image{order:3;width:min(700px,100%);min-height:0;height:300px;margin:22px auto 20px;overflow:hidden;border-radius:26px;position:relative}
+.ae-about-copy .ae-about-image img{width:100%;height:100%;object-fit:cover}
+.ae-about-copy .ae-about-points{order:4;width:min(500px,100%)}
+.ae-about-copy>.ae-btn{order:5}
+.ae-tech-summary{display:none!important}
+.ae-disclaimer{display:none!important}
+.ae-review-card{width:390px;flex-basis:390px;min-height:300px;padding:28px 28px}
+.ae-review-card p{max-width:325px;font-size:14px;line-height:1.75;margin-top:18px}
+.ae-review-head strong{font-size:16px}
+.ae-stars{font-size:17px}
+.ae-floating-whatsapp{position:fixed;right:22px;bottom:22px;z-index:1000;display:flex;align-items:center;gap:9px;padding:14px 19px;border-radius:999px;background:#16b86a;color:#fff;text-decoration:none;font:800 13px 'Plus Jakarta Sans',sans-serif;box-shadow:0 14px 35px rgba(22,184,106,.32);transition:transform .2s ease,box-shadow .2s ease}
+.ae-floating-whatsapp:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(22,184,106,.4)}
+@media(max-width:900px){
+ .ae-feature-copy .ae-feature-image,.ae-about-copy .ae-about-image{height:280px}
+}
+@media(max-width:620px){
+ .ae-feature-copy .ae-feature-image,.ae-about-copy .ae-about-image{height:220px;margin:18px auto 17px;border-radius:21px}
+ .ae-review-card{width:310px;flex-basis:310px;min-height:285px;padding:23px 19px}
+ .ae-review-card p{max-width:270px;font-size:13px;line-height:1.7}
+ .ae-floating-whatsapp{right:15px;bottom:15px;width:54px;height:54px;padding:0;justify-content:center;border-radius:50%}
+ .ae-floating-whatsapp span{display:none}
+}
